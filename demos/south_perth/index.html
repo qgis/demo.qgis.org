@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QGIS server Map demo</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" /> -->
+        <link rel="stylesheet" href="../../libs/leaflet.0.7.3/leaflet.css" />
+        <link rel="stylesheet" href="../../libs/leaflet.0.7.3/leaflet.zoomdisplay.css" />
+	<style>
+		body {
+		    padding: 0;
+		    margin: 0;
+                    background: white;
+		}
+		html, body, #map {
+		    height: 100%;
+		    width: 100%;
+                    background: white;
+		}
+    	</style>
+</head>
+<body>
+	<div id="map"></div>
+        <!-- <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script> -->
+        <script src="../../libs/leaflet.0.7.3/leaflet.js"></script>
+        <script src="../../libs/leaflet.0.7.3/leaflet.zoomdisplay.js"></script>
+	<script>
+		var map = L.map('map').setView([-31.9690018226909, 115.85263252258302], 15);
+		var qgis = L.tileLayer.wms("http://demo.qgis.org/cgi-bin/qgis_mapserv.fcgi?map=/web/demos/south_perth/project.qgs", {
+		    layers: 'project',
+		    format: 'image/png',
+		    transparent: true,
+		    attribution: 'QGIS'
+		}).addTo(map);
+	</script>
+</body>
+</html>
+
