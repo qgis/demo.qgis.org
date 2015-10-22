@@ -1,16 +1,13 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="2.5.0-Master" minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+<qgis version="2.1.0-Master" minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="7" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="3" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
   <renderer-v2 symbollevels="0" type="singleSymbol">
     <symbols>
       <symbol alpha="1" type="fill" name="0">
         <layer pass="0" class="SimpleFill" locked="0">
-          <prop k="border_width_map_unit_scale" v="0,0"/>
           <prop k="border_width_unit" v="MM"/>
           <prop k="color" v="167,167,167,255"/>
           <prop k="color_border" v="113,113,113,255"/>
-          <prop k="joinstyle" v="bevel"/>
           <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
           <prop k="style" v="solid"/>
           <prop k="style_border" v="solid"/>
@@ -18,8 +15,8 @@
         </layer>
       </symbol>
     </symbols>
-    <rotation/>
-    <sizescale scalemethod="area"/>
+    <rotation field=""/>
+    <sizescale field="" scalemethod="area"/>
   </renderer-v2>
   <customproperties>
     <property key="labeling" value="pal"/>
@@ -36,17 +33,12 @@
     <property key="labeling/bufferNoFill" value="false"/>
     <property key="labeling/bufferSize" value="1"/>
     <property key="labeling/bufferSizeInMapUnits" value="false"/>
-    <property key="labeling/bufferSizeMapUnitMaxScale" value="0"/>
-    <property key="labeling/bufferSizeMapUnitMinScale" value="0"/>
     <property key="labeling/bufferTransp" value="0"/>
-    <property key="labeling/centroidInside" value="false"/>
     <property key="labeling/centroidWhole" value="false"/>
     <property key="labeling/decimals" value="3"/>
     <property key="labeling/displayAll" value="false"/>
     <property key="labeling/dist" value="0"/>
     <property key="labeling/distInMapUnits" value="false"/>
-    <property key="labeling/distMapUnitMaxScale" value="0"/>
-    <property key="labeling/distMapUnitMinScale" value="0"/>
     <property key="labeling/enabled" value="false"/>
     <property key="labeling/fieldName" value=""/>
     <property key="labeling/fontBold" value="false"/>
@@ -59,17 +51,13 @@
     <property key="labeling/fontMinPixelSize" value="3"/>
     <property key="labeling/fontSize" value="11"/>
     <property key="labeling/fontSizeInMapUnits" value="false"/>
-    <property key="labeling/fontSizeMapUnitMaxScale" value="0"/>
-    <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
     <property key="labeling/fontStrikeout" value="false"/>
     <property key="labeling/fontUnderline" value="false"/>
     <property key="labeling/fontWeight" value="50"/>
     <property key="labeling/fontWordSpacing" value="0"/>
     <property key="labeling/formatNumbers" value="false"/>
-    <property key="labeling/isExpression" value="true"/>
+    <property key="labeling/isExpression" value="false"/>
     <property key="labeling/labelOffsetInMapUnits" value="true"/>
-    <property key="labeling/labelOffsetMapUnitMaxScale" value="0"/>
-    <property key="labeling/labelOffsetMapUnitMinScale" value="0"/>
     <property key="labeling/labelPerPart" value="false"/>
     <property key="labeling/leftDirectionSymbol" value="&lt;"/>
     <property key="labeling/limitNumLabels" value="false"/>
@@ -90,10 +78,6 @@
     <property key="labeling/previewBkgrdColor" value="#ffffff"/>
     <property key="labeling/priority" value="5"/>
     <property key="labeling/quadOffset" value="4"/>
-    <property key="labeling/repeatDistance" value="0"/>
-    <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
-    <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
-    <property key="labeling/repeatDistanceUnit" value="1"/>
     <property key="labeling/reverseDirectionSymbol" value="false"/>
     <property key="labeling/rightDirectionSymbol" value=">"/>
     <property key="labeling/scaleMax" value="10000000"/>
@@ -107,13 +91,9 @@
     <property key="labeling/shadowOffsetAngle" value="135"/>
     <property key="labeling/shadowOffsetDist" value="1"/>
     <property key="labeling/shadowOffsetGlobal" value="true"/>
-    <property key="labeling/shadowOffsetMapUnitMaxScale" value="0"/>
-    <property key="labeling/shadowOffsetMapUnitMinScale" value="0"/>
     <property key="labeling/shadowOffsetUnits" value="1"/>
     <property key="labeling/shadowRadius" value="1.5"/>
     <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
-    <property key="labeling/shadowRadiusMapUnitMaxScale" value="0"/>
-    <property key="labeling/shadowRadiusMapUnitMinScale" value="0"/>
     <property key="labeling/shadowRadiusUnits" value="1"/>
     <property key="labeling/shadowScale" value="100"/>
     <property key="labeling/shadowTransparency" value="30"/>
@@ -124,8 +104,6 @@
     <property key="labeling/shapeBorderColorG" value="128"/>
     <property key="labeling/shapeBorderColorR" value="128"/>
     <property key="labeling/shapeBorderWidth" value="0"/>
-    <property key="labeling/shapeBorderWidthMapUnitMaxScale" value="0"/>
-    <property key="labeling/shapeBorderWidthMapUnitMinScale" value="0"/>
     <property key="labeling/shapeBorderWidthUnits" value="1"/>
     <property key="labeling/shapeDraw" value="false"/>
     <property key="labeling/shapeFillColorA" value="255"/>
@@ -133,21 +111,15 @@
     <property key="labeling/shapeFillColorG" value="255"/>
     <property key="labeling/shapeFillColorR" value="255"/>
     <property key="labeling/shapeJoinStyle" value="64"/>
-    <property key="labeling/shapeOffsetMapUnitMaxScale" value="0"/>
-    <property key="labeling/shapeOffsetMapUnitMinScale" value="0"/>
     <property key="labeling/shapeOffsetUnits" value="1"/>
     <property key="labeling/shapeOffsetX" value="0"/>
     <property key="labeling/shapeOffsetY" value="0"/>
-    <property key="labeling/shapeRadiiMapUnitMaxScale" value="0"/>
-    <property key="labeling/shapeRadiiMapUnitMinScale" value="0"/>
     <property key="labeling/shapeRadiiUnits" value="1"/>
     <property key="labeling/shapeRadiiX" value="0"/>
     <property key="labeling/shapeRadiiY" value="0"/>
     <property key="labeling/shapeRotation" value="0"/>
     <property key="labeling/shapeRotationType" value="0"/>
     <property key="labeling/shapeSVGFile" value=""/>
-    <property key="labeling/shapeSizeMapUnitMaxScale" value="0"/>
-    <property key="labeling/shapeSizeMapUnitMinScale" value="0"/>
     <property key="labeling/shapeSizeType" value="0"/>
     <property key="labeling/shapeSizeUnits" value="1"/>
     <property key="labeling/shapeSizeX" value="0"/>
@@ -189,11 +161,30 @@
     <multilineenabled fieldname="" on=""/>
     <selectedonly on=""/>
   </labelattributes>
-  <editform>/gisdata/InaSAFEPackages/Jakarta</editform>
+  <edittypes>
+    <edittype labelontop="0" editable="1" type="0" name="ADMIN"/>
+    <edittype labelontop="0" editable="1" type="0" name="AMENITY"/>
+    <edittype labelontop="0" editable="1" type="0" name="BUILDING"/>
+    <edittype labelontop="0" editable="1" type="0" name="CAPACITY"/>
+    <edittype labelontop="0" editable="1" type="0" name="FULL_ADDRE"/>
+    <edittype labelontop="0" editable="1" type="0" name="LEISURE"/>
+    <edittype labelontop="0" editable="1" type="0" name="LEVELS"/>
+    <edittype labelontop="0" editable="1" type="0" name="NAME"/>
+    <edittype labelontop="0" editable="1" type="0" name="OFFICE"/>
+    <edittype labelontop="0" editable="1" type="0" name="OSM_TYPE"/>
+    <edittype labelontop="0" editable="1" type="0" name="RELIGION"/>
+    <edittype labelontop="0" editable="1" type="0" name="ROOF_ACCES"/>
+    <edittype labelontop="0" editable="1" type="0" name="ROOF_TYPE"/>
+    <edittype labelontop="0" editable="1" type="0" name="STRUCTURE"/>
+    <edittype labelontop="0" editable="1" type="0" name="TYPE"/>
+    <edittype labelontop="0" editable="1" type="0" name="USE"/>
+    <edittype labelontop="0" editable="1" type="0" name="WALL_TYPE"/>
+  </edittypes>
+  <editform>../../../../gisdata/InaSAFEPackages/Jakarta</editform>
   <editforminit></editforminit>
   <featformsuppress>0</featformsuppress>
-  <annotationform>/gisdata/InaSAFEPackages/Jakarta</annotationform>
-  <editorlayout>uifilelayout</editorlayout>
+  <annotationform>../../../../gisdata/InaSAFEPackages/Jakarta</annotationform>
+  <editorlayout>generatedlayout</editorlayout>
   <excludeAttributesWMS/>
   <excludeAttributesWFS/>
   <attributeactions/>
