@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>QGIS server Map demo</title>
+	<title>QGIS server Map demo: Attandees Nødebo Denmark</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
@@ -20,9 +20,9 @@
 	<div id="map"></div>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 	<script>
-		var map = L.map('map').setView([62, -157], 4);
-		var qgis = L.tileLayer.wms("http://demo.qgis.org/cgi-bin/qgis_mapserv.fcgi?map=/web/demos/alaska/alaska_map.qgs", {
-		    layers: 'alaska_map',
+		var map = L.map('map').setView([0, 0], 2);
+		var qgis = L.tileLayer.wms("http://demo.qgis.org/cgi-bin/qgis_mapserv.fcgi?map=/web/demos/2015/qgis2015.qgs", {
+		    layers: 'OpenStreetMap,attendees',
 		    format: 'image/png',
 		    transparent: true,
 		    attribution: 'QGIS'
