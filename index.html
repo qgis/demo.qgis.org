@@ -31,6 +31,17 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
     <meta name="apple-mobile-web-app-capable" content="yes">
 
+    <style>
+    .row-fluid:before, .row-fluid:after {
+        margin-bottom: 10px;
+    }
+    /*body {
+        background-image: url('https://oami.europa.eu/copla/image/CJ4JX4FZVCC523YA2TMALSKFLFPOWZHPVHYMP5QREVP2BOXHB3PCM7RCOZR6TEIMWNCQDAB6N25VA');
+        background-color: #cccccc;
+        background-repeat: no-repeat;
+    }*/
+    </style>
+
   </head>
   <body>
 
@@ -40,7 +51,7 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li><a href="site/index.html"></a> &raquo;</li>
+        <li><a href="index.html"></a> &raquo;</li>
       </ul>
     </div>
 
@@ -54,7 +65,7 @@
             <span class="icon-bar"></span>
             </button>
 
-            <a class="brand" href="site/index.html">QGIS</a>
+            <a class="brand" href="index.html">QGIS</a>
             <span class="navbar-text pull-left"><b>Demo Server</b></span>
 
             <div class="nav-collapse collapse">
@@ -76,7 +87,9 @@
                     <h1>QGIS Server demo's</h1>
                     <p>
                         Here on <a href="http://demo.qgis.org">demo.qgis.org</a> you will find some
-                        examples of QGIS projects, running here in QGIS server...
+                        examples of QGIS-Server related projects. We have some examples of small example
+                        pages with tiles rendered by QGIS-Server, but also more sophisticated 
+                        webclients getting there (WMS or tile) data from QGIS-Server!
                     </p>
                     <p>
 
@@ -117,7 +130,7 @@
             </div>
         </div>
 
-        <div class="container-fluid">
+<!--        <div class="container-fluid">
             <div class="row">
                 <div class="span12">
 
@@ -128,21 +141,65 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
 
         <div class="container-fluid">
             <div class="row-fluid">
-                <div class="span4"><a href="demos/helloworld"><img src="demos/helloworld/img/screenie.png"/></a><br/>
-                    A simple leaflet (leaflet from cdn) example, world data from QGIS server
+
+                <div class="span4 thumbnail"><img src="demos/solothurn/solothurn.png"/>
+                    <h4>Canton of Solothurn</h4>
+                    <p>Example of a QGIS Web Client application connecting to a QGIS Server of the Canton of Solothurn in Switzerland
+                    </p>
+                    <a class="btn btn-default" role="button" href="http://www.sogis1.so.ch/wsgi/webgisLauncher.wsgi?uuid=3a44cf87-3213-4a2f-a8c8-171c7f97a300">View</a>
                 </div>
-                <div class="span4"><a href="demos/helloworld"><img src="demos/helloworld/img/screenie.png"/></a>
-                    Some text below a demo
+
+                <div class="span4 thumbnail"><img src="demos/helloworld/img/screenie.png"/><br/>
+                    <h4>Hello world</h4>
+                    <p>A simple leaflet (leaflet from cdn) example, world data from QGIS server
+                    </p>
+                    <a class="btn btn-default" role="button" href="demos/helloworld">View</a>
                 </div>
-                <div class="span4"><a href="demos/helloworld"><img src="demos/helloworld/img/screenie.png"/></a>
-                    Some text below a demo
+
+                <div class="span4 thumbnail"><img src="demos/jena/kartenportaljena.png"/>
+                    <h4>Map Portal Jena, Germany</h4>
+                    <p>An example of QGIS-Web Client: Kartenportal Jena
+                    </p>
+                    <a class="btn btn-default" role="button" href="http://map3.jena.de/kartenportal/kartenportal">View</a>
                 </div>
+
             </div>
         </div>
+
+
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+
+                <div class="span4 thumbnail"><img src="demos/kanton_glarus/kantonglarus.png"/><br/>
+                    <h4>Geodatenviewer Kanton Glarus</h4>
+                    <p>Kanton Glarus runs a QGIS-Web Client and a mobile (OL3) client serving QGIS-Server maps.
+                    </p>
+                    <a class="btn btn-default" role="button" href="https://map.geo.gl.ch/">View</a>
+                    <a class="btn btn-default" role="button" href="https://mobile.geo.gl.ch/">View mobile</a>
+                </div>
+
+                <div class="span4 thumbnail"><img src="demos/helloworld/img/screenie.png"/><br/>
+                    <h4>Attendees Nødebo Denmark</h4>
+                    <p>See <a href="http://qgis.org/2015"/>http://qgis.org/2015</a>
+                    </p>
+                    <a class="btn btn-default" role="button" href="demos/2015/index.html">View</a>
+                </div>
+
+                <div class="span4 thumbnail"><img src="demos/helloworld/img/screenie.png"/><br/>
+                    <h4>Your QGIS server example?</h4>
+                    <p>If you know a good example, please let us know via richard@qgis.org
+                    </p>
+                    <a class="btn btn-default" role="button" href="http://map.geo.admin.ch">View</a>
+                </div>
+
+            </div>
+        </div>
+
 
         <div class="container-fluid">
             <div class="row-fluid">
@@ -150,7 +207,7 @@
 
                     <h1></h1>
                     <p>
-                        Enjoy QGIS and QGIS Server
+                        Enjoy <a href="http://qgis.org">QGIS and QGIS Server</a>
                     </p>
                     <p>
 
@@ -167,7 +224,7 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
-        <li><a href="site/index.html"></a> &raquo;</li>
+        <li><a href="index.html"></a> &raquo;</li>
       </ul>
     </div>
   <footer class="footer">
@@ -179,7 +236,7 @@
             <li id="facebook"><a href="https://www.facebook.com/pages/QGIS-Quantum-GIS-/298112000235096" class="external"><div></div></a></li>
             <li id="gplus"><a href="http://plus.google.com/communities/114776597176808981624" class="external"><div></div></a></li>
             <li id="github"><a href="http://github.com/qgis/" class="external"><div></div></a></li>
-            <li id="aboutcontact"><a href="site/getinvolved/about.html"><div></div></a></li>
+            <li id="aboutcontact"><a href="http://qgis.org/site/getinvolved/about.html"><div></div></a></li>
           </ul>
         </div>
 
@@ -187,10 +244,6 @@
     </div>
     <div class="container">
       <p class="credit">
-        Select graphics from <a href="http://thenounproject.com" target="_blank">The Noun Project collection</a>
-
-
-
       </p>
     </div>
   </footer>
