@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>South African Police</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" /> -->
+        <link rel="stylesheet" href="../../libs/leaflet.0.7.3/leaflet.css" />
+        <link rel="stylesheet" href="../../libs/leaflet.0.7.3/leaflet.zoomdisplay.css" />
+	<style>
+		body {
+		    padding: 0;
+		    margin: 0;
+                    background: white;
+		}
+		html, body, #map {
+		    height: 100%;
+		    width: 100%;
+                    background: white;
+		}
+    	</style>
+</head>
+<body>
+	<div id="map"></div>
+        <!-- <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script> -->
+        <script src="../../libs/leaflet.0.7.3/leaflet.js"></script>
+        <script src="../../libs/leaflet.0.7.3/leaflet.zoomdisplay.js"></script>
+	<script>
+		var map = L.map('map', {
+    		    center: [-34.02205, 20.44254],
+                zoom: 6,
+                minZoom: 6,
+                maxZoom: 18,
+                maxBounds: [[-34.8331,16.450] ,[-22.124,32.891]],
+		});
+		var qgis = L.tileLayer.wms("http://demo.qgis.org/cgi-bin/qgis_mapserv.fcgi?map=/web/demos/sap/police.qgs", {
+		    layers: 'police',
+		    format: 'image/png',
+		    transparent: true,
+		    attribution: 'QGIS'
+		}).addTo(map);
+	</script>
+</body>
+</html>
+
